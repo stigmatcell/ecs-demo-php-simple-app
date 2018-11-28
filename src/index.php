@@ -20,8 +20,8 @@
                 <p>Your PHP application is now running on a container in Amazon ECS.</p>
                 <p>marcel testing yoo 0.2<?php echo phpversion(); ?>.</p>
                           <?php
-                        $myfile = fopen("/var/www/my-vol/date", "r") or die("");
-                        echo fread($myfile,filesize("/var/www/my-vol/date"));
+                        $myfile = fopen("/var/www/html/my-vol/date", "r") or die("");
+                        echo fread($myfile,filesize("/var/www/html/my-vol/date"));
                         fclose($myfile);
                 ?>
 
